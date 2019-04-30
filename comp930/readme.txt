@@ -14,6 +14,10 @@ the queries to get the data that I will use to create the tables for my app are 
 
 
 The boundaries for the neiborhoods are present in the census data, I will identify the center of the area by averaging the latitudes and longitudes and use it as a point of reference
-the Python script to transform the coordinates for these boundaries is the multip.py
+the Python script with the functions to transform the coordinates for these boundaries is the multip.py
+
+The python script that populates the google coordinates and the center is cgydata_neighcoords.py
+
+
 
 

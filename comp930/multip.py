@@ -58,7 +58,7 @@ def getcenter(googmulti):
 	return ("{lat:"+str(lngavg)+", lng:"+str(latavg)+"}")
 
 
-print(getcenter (multip2google (mp)))
+#print(getcenter (multip2google (mp)))
 
 
 
