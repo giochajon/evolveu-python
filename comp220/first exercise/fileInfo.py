@@ -1,34 +1,37 @@
 import sys
 #get the name of the file 
 myfile = sys.argv[1]
+pattern = sys.argv[2]
 print("we are using ", myfile)
 
 
+def getlinenumbers(targetfile,pattern):
 ## get the number of lines
-f = open(myfile,'r')
+    f = open(targetfile,'r')
 
-linenumber = len(f.readlines( ))
+    linenumber = len(f.readlines( ))
 
-print("Number of Lines:",linenumber)
-
-
-## get contents into z and number of chars
-# move to the beginning
-f.seek(0,0)
-
-z = f.read()
-numchars = len(z)
-# how many "th" are in the file
-thnum = z.count(sys.argv[2])
-print (f"I found {thnum} {sys.argv[2]}'s in the file")
-
-# tell will tell you the position on the file
-if f.tell() == numchars:
-    print(f'we are at char {numchars} at the end of file')
-
-# move to the beginning
-f.seek(0,0)
+    #print("Number of Lines:",linenumber)
 
 
+    ## get contents into z and number of chars
+    # move to the beginning
+    f.seek(0,0)
 
-f.close()
+    z = f.read()
+    numchars = len(z)
+    # how many of the pattern are in the file
+    thnum = z.count(pattern)
+    #print (f"I found {thnum} {pattern}'s in the file")
+
+    # tell will tell you the position on the file
+    #if f.tell() == numchars:
+    #    print(f'we are at char {numchars} at the end of file')
+
+    # move to the beginning
+    f.seek(0,0)
+    f.close()
+    return [linenumber,numchars,thnum] 
+
+r = getlinenumbers(myfile,pattern)
+print (f"there are {r[0]} lines and {r[1]} characters as well as {r[2]} occurrences of {pattern}'s in {myfile}")
