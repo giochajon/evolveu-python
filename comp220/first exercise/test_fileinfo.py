@@ -10,8 +10,8 @@ import fileInfo
 # the toie
 # total of 7 ie repetitions
 
-def test_fileinfo:
-    x = fileinfo.getlinenumbers("test.txt","ie")
+def test_fileinfo():
+    x = fileInfo.getlinenumbers("test.txt","ie")
     assert x[0] == 8
     assert x[1] == 78
     assert x[2] == 7

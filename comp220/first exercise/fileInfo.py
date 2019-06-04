@@ -1,8 +1,5 @@
 import sys
 #get the name of the file 
-myfile = sys.argv[1]
-pattern = sys.argv[2]
-print("we are using ", myfile)
 
 
 def getlinenumbers(targetfile,pattern):
@@ -33,5 +30,10 @@ def getlinenumbers(targetfile,pattern):
     f.close()
     return [linenumber,numchars,thnum] 
 
-r = getlinenumbers(myfile,pattern)
-print (f"there are {r[0]} lines and {r[1]} characters as well as {r[2]} occurrences of {pattern}'s in {myfile}")
+
+if __name__ == "__main__":
+    myfile = sys.argv[1]
+    pattern = sys.argv[2]
+    print("we are using ", myfile)
+    r = getlinenumbers(myfile,pattern)
+    print (f"there are {r[0]} lines and {r[1]} characters as well as {r[2]} occurrences of {pattern}'s in {myfile}")
