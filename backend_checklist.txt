@@ -1,0 +1,36 @@
+
+
+
+Checklist compliance:
+
+
+
+1. my Github repository is in https://github.com/giochajon/
+
+it contains three repositories with all the excercises
+
+1.1 Javascript.execises.minitests contains all the exercises of the udemy course, it also contains a folder DollarPractice that contains the excercises 
+1.2 evolveu-javascript contains the initial competencies in javascript (not react)
+1.3 Objects contain the React excercises
+1.4 evolveu-python contains the Python competencies, one forlder for each
+
+2.  the dollar practice excercises are in a folder under the Javascript.execises.minitests repository
+
+3. email generator and test under folder /comp200
+
+4. tax calculator under folder along with the test /comp200
+
+5. census by community under "comp220/third exercise" I have 3 versions: one with pandas, one with two runs without using if's (two passes) and une using dictionaries with one pass only    
+
+6. invoices  two programs to create invoices (two months), two programs to populate (two months) one to merge
+
+7. Flask invoice under forlder comp240 two versions for the table (simple and with header) and JSON file version
+
+8. spa found under CalgaryCommunities repository, live frontend on cgyab.ca backend on backend.cgyaab.ca
+
+9. Database exercise under 930 
+	backup of the database 
+	the SQL files contain the queries with join examples
+	the python files the scripts to populate the data from the CSV and the transformation of cords.
+
+10 the Diagram for the appication is found on the front end about page for the SPA. the diagram is found on the folder with the sorce code. 
